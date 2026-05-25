@@ -60,3 +60,24 @@ LastName,
 Age,
 (Age + 10) * 10
 FROM EmployeeDemographics;
+
+-- STEP 5: USING THE WHERE COMMAND
+SELECT * 
+FROM EmployeeDemographics
+WHERE LastName = 'Beesly' 
+
+SELECT *
+FROM EmployeeSalary
+WHERE Salary >= 45000;
+
+-- STEP 5: CUSTOM ALIASING AND COLUMN REORDERING
+SELECT 
+    cream.EmployeeID, 
+    pizza.FirstName, 
+    pizza.LastName, 
+    cream.Salary, 
+    cream.JobTitle
+FROM EmployeeDemographics pizza
+INNER JOIN EmployeeSalary cream
+    ON pizza.EmployeeID = cream.EmployeeID
+WHERE cream.Salary >= 45000;
