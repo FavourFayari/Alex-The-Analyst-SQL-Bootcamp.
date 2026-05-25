@@ -98,3 +98,8 @@ SELECT *
 FROM EmployeeDemographics 
 WHERE Gender != 'female'
 AND Age > 32
+
+SELECT *
+FROM EmployeeDemographics 
+WHERE Gender != 'female'
+OR NOT Age > 32
