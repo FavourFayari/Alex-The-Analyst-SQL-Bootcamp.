@@ -53,3 +53,10 @@ INNER JOIN EmployeeSalary sal
     ON demo.EmployeeID = sal.EmployeeID
 WHERE demo.Age >= 30
 ORDER BY sal.Salary DESC;
+
+-- STEP 4: COLUMN MATHEMATICS PRACTICE
+SELECT FirstName,
+LastName,
+Age,
+(Age + 10) * 10
+FROM EmployeeDemographics;
