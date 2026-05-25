@@ -107,3 +107,17 @@ OR NOT Age > 32
 SELECT *
 FROM EmployeeDemographics 
 WHERE (FirstName = 'Meredith' AND Age = 32) OR Age < 30
+
+-- STEP 8: LIKE STATEMENT % (anything) _ (specific value)
+SELECT * 
+FROM EmployeeDeemographics 
+WHERE FirstName LIKE '%A%'
+
+SELECT *
+FROM EmployeeDemographics 
+WHERE FirstName LIKE 'p__'
+
+SELECT *
+FROM EmployeeDemographics 
+WHERE LastName LIKE 'M___%'
+
