@@ -81,3 +81,9 @@ FROM EmployeeDemographics pizza
 INNER JOIN EmployeeSalary cream
     ON pizza.EmployeeID = cream.EmployeeID
 WHERE cream.Salary >= 45000;
+
+
+--STEP 6: NOT EQUAL TO !=
+SELECT *
+FROM EmployeeDemographics 
+WHERE Gender != 'female'
