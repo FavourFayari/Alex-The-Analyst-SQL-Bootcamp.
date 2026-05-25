@@ -87,3 +87,14 @@ WHERE cream.Salary >= 45000;
 SELECT *
 FROM EmployeeDemographics 
 WHERE Gender != 'female'
+
+-- STEP 7: AND OR NOT
+SELECT *
+FROM EmployeeDemographics 
+WHERE Gender != 'female'
+OR Age > 32
+
+SELECT *
+FROM EmployeeDemographics 
+WHERE Gender != 'female'
+AND Age > 32
